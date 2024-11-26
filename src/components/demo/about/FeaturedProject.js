@@ -38,7 +38,7 @@ const projects = [
 
 export default function FeaturedProject() {
   return (
-    <section className="py-16 bg-gray-100 mt-24">
+    <section id="csr" className="py-16 bg-gray-100 mt-24">
       <div className=" container mx-auto">
         <h1 className="text-[12px] md:text-[14px] paragraphFont text-center text-hover">
           CSR

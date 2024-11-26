@@ -49,10 +49,10 @@ const Service = () => {
       {/* Image Section */}
       <motion.div
         className="w-full md:w-3/5"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false }}
       >
         <Image
           src="https://i.ibb.co/TtkDt7Q/SEL-Nibash-Image.jpg"

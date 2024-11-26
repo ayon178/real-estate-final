@@ -58,9 +58,10 @@ const Communi = () => {
         {/* Image Section */}
         <motion.div
           className="w-full md:w-1/2"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: false }}
         >
           <Image
             src="https://i.ibb.co/1bsHjvb/Interi-Arch-Image.webp"

@@ -62,7 +62,7 @@ const awards = [
 
 export default function AwardsComponent() {
   return (
-    <section className="py-16 container mx-auto bg-white text-center">
+    <section id="awards" className="py-16 container mx-auto bg-white text-center">
       <motion.h2
         className="headingFont text-3xl md:text-4xl text-gray-800 mb-4"
         initial={{ opacity: 0, y: 50 }} // Start from below with 0 opacity

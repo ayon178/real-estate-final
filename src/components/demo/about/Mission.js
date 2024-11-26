@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const Mission = () => {
   return (
-    <section className="bg-[#FAF8F6] px-6 lg:px-28 py-40 flex flex-col lg:flex-row items-center lg:gap-14 container mx-auto ">
+    <section id="our_mission" className="bg-[#FAF8F6] px-6 lg:px-28 py-40 flex flex-col lg:flex-row items-center lg:gap-14 container mx-auto ">
       {/* Image Section */}
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
         <div className=" h-72 lg:w-[600px] lg:h-full">

@@ -57,7 +57,7 @@ const directors = [
 
 const BoardOfDirectors = () => {
   return (
-    <div className="container mx-auto px-4  py-32 ">
+    <div id="our_leaders" className="container mx-auto px-4  py-32 ">
       {/* Title animation */}
       <motion.h2
         className="headingFont text-2xl text-center mb-16 md:text-4xl text-headingText"
@@ -72,7 +72,9 @@ const BoardOfDirectors = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7  mx-20  ">
         {directors.map((director, index) => (
           <div
-            className="bg-white rounded-lg shadow-lg overflow-hidden pt-3"
+            className={`bg-white rounded-lg shadow-lg overflow-hidden pt-3 ${
+              index === 0 ? 'col-span-2' : ''
+            }`}
             key={index}
           >
             <motion.div
@@ -85,7 +87,7 @@ const BoardOfDirectors = () => {
               <img
                 src={director.imageUrl}
                 alt={director.name}
-                className="w-full md:w-2/5 h-[300px] object-cover"
+                className={`w-full  ${index === 0 ? 'md:w-1/5': 'md:w-2/5'} h-[300px] object-cover object-center`}
               />
 
               <div className="p-8 pb-0">

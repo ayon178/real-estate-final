@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 import { FiChevronDown } from 'react-icons/fi'
 import { logo } from '@/app/constant/images'
 import { useRouter } from 'next/navigation'
@@ -13,23 +12,23 @@ const menuItems = [
     label: 'About Us',
     path: '/about',
     subItems: [
-      { label: 'Who We Are', path: '/demo/about/who-we-are' },
-      { label: 'Our Leaders', path: '/demo/about/our-leaders' },
+      { label: 'Who We Are', path: '/demo/about/#our_mission' },
+      { label: 'Our Leaders', path: '/demo/about/#our_leaders' },
       {
         label: 'Awards & Recognition',
-        path: '/demo/about/awards-and-recognition',
+        path: '/demo/about/#awards',
       },
-      { label: 'CSR', path: '/demo/about/csr' },
+      { label: 'CSR', path: '/demo/about/#csr' },
     ],
   },
   {
     label: 'Projects',
     path: '/projects',
     subItems: [
-      { label: 'Ready', path: '/demo/ready' },
-      { label: 'Completed', path: '/demo/completed' },
-      { label: 'Ongoing', path: '/demo/ongoing' },
-      { label: 'Upcoming', path: '/demo/upcoming' },
+      { label: 'Ready', path: '/demo/projects' },
+      { label: 'Completed', path: '/demo/projects' },
+      { label: 'Ongoing', path: '/demo/projects' },
+      { label: 'Upcoming', path: '/demo/projects' },
     ],
   },
   { label: 'Our Business', path: '/demo/ourBusiness' },

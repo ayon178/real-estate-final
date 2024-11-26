@@ -10,7 +10,7 @@ const Humanitarian = () => {
         {/* Text Section */}
         <motion.div
           className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
@@ -56,9 +56,9 @@ const Humanitarian = () => {
         {/* Image Section */}
         <motion.div
           className="w-full md:w-6/12"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
         >
           <Image
             src="https://i.ibb.co/5shRfzh/SEL-RMC-Image.jpg"

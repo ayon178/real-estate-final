@@ -9,10 +9,10 @@ const Comprehensive = () => {
       {/* Left Side Image */}
       <motion.div
         className="md:w-3/5 w-full flex justify-center md:justify-end p-4"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false }}
       >
         <img
           src="https://i.ibb.co/Qf3FnqC/Orchard-Convention-Hall-Image.jpg"
