@@ -5,10 +5,10 @@ import aboutBg from '../../../assets/home/about_bg.png'
 
 const AboutUs = () => {
   return (
-    <div className="relative flex flex-col md:flex-row px-4 md:px-0 justify-start mb-28">
+    <div className="relative flex flex-col md:flex-row px-4 md:px-0 justify-start mb-28 bg-white ">
       {/* Image Animation */}
       <motion.div
-        className="w-full md:w-[55%] h-[400px] md:h-[600px] z-20"
+        className="w-full md:w-[55%] h-[400px] md:h-[600px] z-0 bg-white"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -23,7 +23,7 @@ const AboutUs = () => {
 
       {/* Text Animation */}
       <motion.div
-        className="w-full md:w-[45%] p-14 flex flex-col justify-start z-10"
+        className="w-full md:w-[45%] p-14 flex flex-col justify-start z-0 bg-white"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}

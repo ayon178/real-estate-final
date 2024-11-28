@@ -62,7 +62,7 @@ const slides = [
 const textData = [
   {
     // smallLine: 'The Structural Engineers Ltd.',
-    firstLine: 'Dedicated to ',
+    firstLine: 'Dedicated to  ',
     secondLine: 'developing homes',
     thirdLine: 'with precision',
     buttonText: 'View Projects',
@@ -271,7 +271,7 @@ const Home = () => {
           </div>
 
           {/* Slider Controls */}
-          <div className="absolute bottom-10 right-10 flex items-center space-x-2 z-20">
+          <div className="absolute bottom-10 right-10 flex items-center space-x-2 z-10">
             {/* Previous button */}
             <button
               onClick={prevImage}
