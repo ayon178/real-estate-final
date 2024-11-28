@@ -7,10 +7,10 @@ export default function TheFact() {
   return (
     <div className="flex flex-col lg:flex-row gap-10 justify-between items-center p-6 lg:p-12 bg-[#F9F7F7] min-h-full ">
       {/* Left Side: Text and Numbers */}
-      <div className="flex flex-col items-start space-y-6 w-full lg:w-1/2 h-full lg:h-auto flex-grow">
+      <div className="flex flex-col items-start space-y-10 w-full lg:w-1/2 h-full lg:h-auto flex-grow lg:mb-32 ">
         {/* Text Animations */}
         <motion.h2
-          className="headingFont text-2xl lg:text-4xl text-blue-900"
+          className="headingFont text-2xl lg:text-6xl  text-blue-900  "
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -19,7 +19,7 @@ export default function TheFact() {
           One of the leading<br/> real estate companies
         </motion.h2>
         {/* added animation here */}
-        <motion.p
+        {/* <motion.p
           className="paragraphFont text-[#66717A] text-md pb-7 pt-0 md:pr-32"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,11 +29,11 @@ export default function TheFact() {
           Our mission is to engage in issues that are of concern to individuals,
           families and communities through an uncompromising commitment to
           create outstanding living, work and leisure environments.
-        </motion.p>
+        </motion.p> */}
 
-        <div className="grid grid-cols-2 gap-4 w-full">
+        <div className="grid grid-cols-2 gap-4 w-full  ">
           {/* Numbers and Titles */}
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start lg:mt-10">
             <CountUp
               start={0}
               end={37}
@@ -51,7 +51,7 @@ export default function TheFact() {
             </CountUp>
             <p className="text-gray-500 buttonFont mt-2">Ongoing Projects </p>
           </div>
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start lg:mt-10">
             <CountUp
               start={0}
               end={10}
