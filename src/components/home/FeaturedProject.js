@@ -74,7 +74,7 @@ const FeaturedProject = () => {
           modules={[Autoplay, Pagination]}
           spaceBetween={20}
           loop={true}
-          centeredSlides={true}
+          // centeredSlides={true}
           autoplay={{
             delay: 3800,
             disableOnInteraction: false,
