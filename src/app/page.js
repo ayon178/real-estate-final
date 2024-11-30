@@ -15,6 +15,7 @@ import TheFact from '@/components/demo/home/TheFact'
 import WhatWeDoSlide from '@/components/demo/home/WhatWeDoSlide'
 import WhyChooseSlide from '@/components/demo/home/WhyChooseSlide'
 import FeaturedProject from '@/components/home/FeaturedProject'
+import FeatureProject2 from '@/components/home/FeatureProject2'
 import ScrollHorizontal from '@/components/home/ScrollHorizontal'
 import Navbar from '@/components/shared/Navbar'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -292,10 +293,11 @@ const Home = () => {
 
       {/* About us */}
       <AboutUs />
-      <ScrollHorizontal/>
+      {/* <ScrollHorizontal/> */}
 
       {/* Featured projects */}
       <FeaturedProject />
+      <FeatureProject2/>
 
       {/* WHy choose slide */}
       <WhyChooseSlide />
