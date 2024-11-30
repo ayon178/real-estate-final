@@ -62,7 +62,7 @@ const slides = [
 const textData = [
   {
     smallLine: 'The Structural Engineers Ltd.',
-    firstLine: 'Dedicated to ',
+    firstLine: 'Dedicated to  ',
     secondLine: 'developing homes',
     thirdLine: 'with precision',
     buttonText: 'View Projects',

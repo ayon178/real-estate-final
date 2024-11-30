@@ -83,7 +83,7 @@ const FeaturedProject = () => {
           breakpoints={{
             600: { slidesPerView: 1 }, // For mobile devices, show 1 slide
             768: { slidesPerView: 2 }, // For tablets, show 2 slides
-            1024: { slidesPerView: 3 }, // For desktops, show 3 slides
+            1024: { slidesPerView: 4 }, // For desktops, show 3 slides
           }}
           className="w-full"
         >

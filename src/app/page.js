@@ -15,11 +15,12 @@ import TheFact from '@/components/demo/home/TheFact'
 import WhatWeDoSlide from '@/components/demo/home/WhatWeDoSlide'
 import WhyChooseSlide from '@/components/demo/home/WhyChooseSlide'
 import FeaturedProject from '@/components/home/FeaturedProject'
+import FeatureProject2 from '@/components/home/FeatureProject2'
+import ScrollHorizontal from '@/components/home/ScrollHorizontal'
 import Navbar from '@/components/shared/Navbar'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { FaFacebookF, FaYoutube } from 'react-icons/fa'
-import { FaTwitter } from 'react-icons/fa6'
+import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 
 const slides = [
   {
@@ -61,15 +62,15 @@ const slides = [
 
 const textData = [
   {
-    smallLine: 'The Structural Engineers Ltd.',
-    firstLine: 'Dedicated to ',
+    // smallLine: 'The Structural Engineers Ltd.',
+    firstLine: 'Dedicated to  ',
     secondLine: 'developing homes',
     thirdLine: 'with precision',
     buttonText: 'View Projects',
     buttonLink: '#',
   },
   {
-    smallLine: 'The Structural Engineers Ltd.',
+    // smallLine: 'The Structural Engineers Ltd.',
     firstLine: 'Modern design',
     secondLine: 'with craftsmanship',
     thirdLine: 'in every project',
@@ -77,7 +78,7 @@ const textData = [
     buttonLink: '#explore',
   },
   {
-    smallLine: 'The Structural Engineers Ltd.',
+    // smallLine: 'The Structural Engineers Ltd.',
     firstLine: 'Spaces resonating with ',
     secondLine: 'comfort and elegance,',
     thirdLine: 'reflecting value ',
@@ -232,13 +233,13 @@ const Home = () => {
             {/* Social Media Icons and Line */}
             <div className="flex flex-col items-center space-y-6">
               <div className="w-[1px] h-32 bg-white"></div>
+              <FaLinkedin className="text-white text-lg hover:text-[#bfa980]" />
               <FaFacebookF className="text-white text-lg hover:text-[#bfa980]" />
-              <FaTwitter className="text-white text-lg hover:text-[#bfa980]" />
-              <FaYoutube className="text-white text-lg hover:text-[#bfa980]" />
+              {/* <FaYoutube className="text-white text-lg hover:text-[#bfa980]" /> */}
             </div>
 
             {/* Dynamic Text Overlay */}
-            <div className="text-left max-w-lg">
+            <div className="text-right lg:translate-x-[1000px] md:translate-x-96 translate-x-20">
               <motion.h1
                 className="buttonFont text-sm text-white tracking-wide mb-2"
                 initial="hidden"
@@ -275,7 +276,7 @@ const Home = () => {
 
               <motion.a
                 href={textData[currentImage].buttonLink}
-                className="buttonFont inline-block bg-[#bfa980] hover:bg-[#a38c6e] text-white text-md px-8 py-3 rounded-lg"
+                className="buttonFont inline-block  text-white text-md px-8 py-3 rounded-lg"
                 initial="hidden"
                 animate="visible"
                 variants={headerVariants.viewProjectsButton}
@@ -286,7 +287,7 @@ const Home = () => {
           </div>
 
           {/* Slider Controls */}
-          <div className="absolute bottom-10 right-10 flex items-center space-x-2 z-20">
+          <div className="absolute bottom-10 right-10 flex items-center space-x-2 z-10">
             {/* Previous button */}
             <button
               onClick={prevImage}
@@ -311,6 +312,7 @@ const Home = () => {
 
       {/* Featured projects */}
       <FeaturedProject />
+      <FeatureProject2/>
 
       {/* WHy choose slide */}
       <WhyChooseSlide />

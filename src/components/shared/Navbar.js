@@ -148,7 +148,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
                 </div>
               ))}
               <div>
-                <button className="buttonFont bg-[#B07E5B] text-slate-900 px-4 py-2 rounded-full">
+                <button className="buttonFont   text-white px-4 py-2 rounded-full">
                   Sel connect
                 </button>
               </div>

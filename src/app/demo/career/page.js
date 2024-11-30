@@ -5,6 +5,7 @@ import Navbar from '@/components/shared/Navbar'
 import React from 'react'
 import pdfImage from '../../../assets/pdfImage.png'
 import { motion } from 'framer-motion'
+import Button from '@/components/demo/career/Button'
 
 const page = () => {
   return (
@@ -43,6 +44,7 @@ const page = () => {
         /> */}
         <img className="w-auto mx-auto h-full" src={pdfImage.src} alt="" />
       </div>
+      <Button/>
       <Form />
     </div>
   )

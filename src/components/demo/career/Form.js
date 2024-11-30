@@ -48,6 +48,7 @@ const Form = () => {
           </motion.div>
 
           {/* Subject Input */}
+
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -59,6 +60,28 @@ const Form = () => {
               name="subject"
               placeholder="Subject"
               className="w-full paragraphFont px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#B39B7D] focus:border-transparent transition duration-200 placeholder-gray-400"
+              required
+            />
+          </motion.div>
+          {/* file upload */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+            className="flex flex-col space-y-3"
+          >
+            <label
+              htmlFor="fileUpload"
+              className="text-sm font-medium text-gray-600"
+            >
+              Upload File
+            </label>
+            <input
+              id="fileUpload"
+              type="file"
+              name="fileUpload"
+              className="block w-full text-sm text-gray-600 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#B39B7D] focus:border-transparent file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-[#B39B7D] file:text-white hover:file:bg-[#9F8B70] transition duration-200"
               required
             />
           </motion.div>
