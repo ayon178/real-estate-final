@@ -138,6 +138,21 @@ const Home = () => {
     },
   ]
 
+  // const imageVariants = {
+  //   enter: (direction) => ({
+  //     x: direction > 0 ? '100%' : '-100%',
+  //     opacity: 1,
+  //   }),
+  //   center: {
+  //     x: 0,
+  //     opacity: 1,
+  //   },
+  //   exit: (direction) => ({
+  //     x: direction < 0 ? '100%' : '-100%',
+  //     opacity: 1,
+  //   }),
+  // }
+
   const headerVariants = {
     smallLine: {
       hidden: { opacity: 0, x: -60 },
@@ -319,3 +334,99 @@ const Home = () => {
 }
 
 export default Home
+
+{
+  /* <div className="h-screen relative overflow-hidden">
+        <AnimatePresence initial={false} mode="popLayout" custom={direction}>
+          <motion.div
+            key={currentImage}
+            custom={direction}
+            variants={imageVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              x: { type: "spring", stiffness: 300, damping: 30 },
+              opacity: { duration: 0.2 }
+            }}
+            className="absolute inset-0 w-full h-full bg-cover bg-center"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImage]})`,
+            }}
+          >
+            <div className="container mx-auto flex gap-14 items-start h-full pt-32">
+             
+              <div className="flex flex-col items-center space-y-6">
+                <div className="w-[1px] h-32 bg-white"></div>
+                <FaFacebookF className="text-white text-lg hover:text-[#bfa980]" />
+                <FaTwitter className="text-white text-lg hover:text-[#bfa980]" />
+                <FaYoutube className="text-white text-lg hover:text-[#bfa980]" />
+              </div>
+
+              
+              <div className="text-left max-w-lg">
+                <motion.h1
+                  className="buttonFont text-sm text-white tracking-wide mb-2"
+                  initial="hidden"
+                  animate="visible"
+                  variants={headerVariants.smallLine}
+                >
+                  {textData[currentImage].smallLine}
+                </motion.h1>
+
+                <motion.h1
+                  className="headingFont text-2xl md:text-3xl lg:text-5xl text-white mt-6 leading-tight"
+                  initial="hidden"
+                  animate="visible"
+                  variants={headerVariants.firstLine}
+                >
+                  {textData[currentImage].firstLine}
+                </motion.h1>
+                <motion.h1
+                  className="headingFont text-2xl md:text-3xl lg:text-5xl text-white leading-tight"
+                  initial="hidden"
+                  animate="visible"
+                  variants={headerVariants.secondLine}
+                >
+                  {textData[currentImage].secondLine}
+                </motion.h1>
+                <motion.h1
+                  className="headingFont text-2xl md:text-3xl lg:text-5xl text-white mb-12 leading-tight"
+                  initial="hidden"
+                  animate="visible"
+                  variants={headerVariants.thirdLine}
+                >
+                  {textData[currentImage].thirdLine}
+                </motion.h1>
+
+                <motion.a
+                  href={textData[currentImage].buttonLink}
+                  className="buttonFont inline-block bg-[#bfa980] hover:bg-[#a38c6e] text-white text-md px-8 py-3 rounded-lg"
+                  initial="hidden"
+                  animate="visible"
+                  variants={headerVariants.viewProjectsButton}
+                >
+                  {textData[currentImage].buttonText}
+                </motion.a>
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+
+        
+        <div className="absolute bottom-10 right-10 flex items-center space-x-2 z-20">
+          <button
+            onClick={prevImage}
+            className="font-bold hover:bg-gray text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-lg"
+          >
+            &lt;
+          </button>
+          <button
+            onClick={nextImage}
+            className="font-bold hover:bg-gray text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-lg"
+          >
+            &gt;
+          </button>
+        </div>
+      </div> */
+}
