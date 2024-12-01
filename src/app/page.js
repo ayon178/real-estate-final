@@ -224,12 +224,12 @@ const Home = () => {
           animate="center"
           exit="exit"
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="h-screen bg-cover bg-center flex items-center justify-center relative px-4 md:px-0"
+          className="md:h-screen h-[70vh] bg-cover bg-center flex items-center justify-center relative px-4 md:px-0"
           style={{
             backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImage].src})`,
           }}
         >
-          <div className="container mx-auto flex gap-14 items-start justify-between">
+          <div className="container mx-auto flex gap-14 items-start md:justify-between">
             {/* Social Media Icons and Line */}
             <div className="flex flex-col items-center space-y-6">
               <div className="w-[1px] h-32 bg-white"></div>
@@ -239,7 +239,7 @@ const Home = () => {
             </div>
 
             {/* Dynamic Text Overlay */}
-            <div className="text-right">
+            <div className="text-right  ">
               <motion.h1
                 className="buttonFont text-sm text-white tracking-wide mb-2"
                 initial="hidden"

@@ -97,7 +97,7 @@ const FeaturedProject = () => {
                 // viewport={{ once: true }}
               >
                 {/* Project Image Container */}
-                <div className="w-full z-10 relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
+                <div className="w-full z-10 relative h-[500px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
                   <Image
                     src={project.imageUrl}
                     alt={project.title}

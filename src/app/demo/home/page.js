@@ -196,7 +196,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden ">
       <Navbar setIsOpen={setIsOpen} isOpen={isOpen} />
 
       {/* Fullscreen Banner with Text Overlay */}

@@ -105,7 +105,7 @@ const FeatureProject2 = () => {
           >
             {/* Grid Item */}
             <div
-              className="h-full bg-cover bg-center flex flex-col justify-end p-6 relative hover:scale-105 transition-transform duration-700 "
+              className="lg:h-full md:[500px] h-[400px] bg-cover bg-center flex flex-col justify-end p-6 relative hover:scale-105 transition-transform duration-700 "
               style={{ backgroundImage: `url(${item.imageUrl.src})` }}
             >
               {/* Overlay */}
