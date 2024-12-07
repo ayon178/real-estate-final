@@ -4,55 +4,55 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import { Autoplay } from 'swiper'
-import { Pagination } from 'swiper'
+import { Autoplay, Pagination } from 'swiper'
 
 const WhatWeDoSlide = ({ slides, slidesPerView }) => {
   return (
     <Swiper
-      spaceBetween={30}
-      slidesPerView={slidesPerView}
+      spaceBetween={20} // Adjusted space for better alignment
+      slidesPerView={1} // Default for extra-small screens
       pagination={{ clickable: true }}
       centeredSlides={true}
       autoplay={{
-        delay: 3800, // Delay between slides in ms
-        disableOnInteraction: false, // Continue autoplay after user interaction
+        delay: 3800,
+        disableOnInteraction: false,
       }}
-      modules={[Autoplay, Pagination]} // Include modules correctly here
+      modules={[Autoplay, Pagination]}
       breakpoints={{
-        // Define breakpoints for responsive behavior
         640: {
-          slidesPerView: 1,
+          slidesPerView: 1, // Small screens
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 2, // Medium screens
         },
         1024: {
-          slidesPerView: slidesPerView, // Pass the slidesPerView prop for larger screens
+          slidesPerView: slidesPerView, // Large screens
         },
       }}
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <div className={`w-full mx-auto rounded-lg overflow-hidden mb-20`}>
+          <div className="w-full mx-auto rounded-lg overflow-hidden mb-12 shadow-md bg-white">
+            {/* Image Section */}
             <img
               src={slide.imageUrl.src}
               alt={slide.title}
-              className="w-[70%] mx-auto object-cover"
+              className="w-[80%] h-[180px] mx-auto object-cover rounded-lg"
             />
-            <div
-              style={{ height: '20.625rem' }}
-              className="p-6 flex flex-col items-center"
-            >
-              {/* <h3 className="text-2xl text-center text-headingText font-semibold mb-8">
+
+            {/* Text Section */}
+            <div className="p-4 flex flex-col items-center">
+              <h3 className="text-lg font-semibold text-gray-800 text-center mb-2">
                 {slide.title}
-              </h3> */}
-              <p className="text-gray-600 paragraphFont mb-4 text-center text-[14px] ">
-                {slide.description}
+              </h3>
+              <p className="text-gray-600 text-sm text-center leading-relaxed mb-4">
+                {slide.description.length > 100
+                  ? `${slide.description.slice(0, 100)}...`
+                  : slide.description}
               </p>
               <a
                 href="#"
-                className="text-primary paragraphFont text-center hover:underline flex items-center"
+                className="text-primary text-sm font-medium hover:underline flex items-center"
               >
                 Explore More &rarr;
               </a>

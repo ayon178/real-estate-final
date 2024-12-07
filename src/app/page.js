@@ -239,7 +239,7 @@ const Home = () => {
             </div>
 
             {/* Dynamic Text Overlay */}
-            <div className="text-right  ">
+            <div className="text-center md:text-right w-full">
               <motion.h1
                 className="buttonFont text-sm text-white tracking-wide mb-2"
                 initial="hidden"
@@ -276,7 +276,7 @@ const Home = () => {
 
               <motion.a
                 href={textData[currentImage].buttonLink}
-                className="buttonFont inline-block  text-white text-md px-8 py-3 rounded-lg"
+                className="buttonFont inline-block text-white text-md px-8 py-3 rounded-lg"
                 initial="hidden"
                 animate="visible"
                 variants={headerVariants.viewProjectsButton}
@@ -317,11 +317,11 @@ const Home = () => {
       {/* WHy choose slide */}
       <WhyChooseSlide />
       {/* What we do slide */}
-      <div className="container mx-auto py-10 mt-14">
+      <div className="container mx-auto py-10 md:mt-14 ">
         <p className="text-[12px] md:text-[14px] paragraphFont text-secondary  text-center">
           WHAT WE DO.
         </p>
-        <h1 className="headingFont text-headingText text-[30px] md:text-[40px] mt-6 mb-28 text-center">
+        <h1 className="headingFont text-headingText text-[20px] lg:px-0 px-4 md:text-[40px] mt-6 md:mb-28 mb-16 text-center">
           Our Sister Concerns <br /> of The Structural Engineers Ltd (SEL).
         </h1>
         <WhatWeDoSlide slides={slides} slidesPerView={3} />

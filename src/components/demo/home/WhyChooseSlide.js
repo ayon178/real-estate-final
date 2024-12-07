@@ -95,9 +95,9 @@ const WhyChooseSlide = () => {
   }
 
   return (
-    <div className="container mx-auto lg:mr-auto pr-32 py-12 md:py-24 xl:mx-auto mt-16">
+    <div className="container mx-auto lg:mr-auto md:pr-32 py-12 md:py-24 xl:mx-auto md:mt-16 mt-10">
       <motion.p
-        className="text-[12px] md:text-[14px] text-secondary paragraphFont text-center md:text-left pl-20 "
+        className="text-[12px] md:text-[14px] text-secondary paragraphFont  text-center md:text-left md:pl-20 "
         initial={{ opacity: 0, y: 50 }} // Start from bottom
         whileInView={{ opacity: 1, y: 0 }} // Move to normal position
         transition={{ duration: 0.8, delay: 0.3 }} // Delay for sequential animation
@@ -107,7 +107,7 @@ const WhyChooseSlide = () => {
       </motion.p>
       <div className="grid grid-cols-4 md:grid-cols-3">
         <motion.h1
-          className="headingFont col-span-4 md:col-span-1 text-headingText text-[28px] md:text-[30px] mt-3 text-center md:text-left pl-20"
+          className="headingFont col-span-4 md:col-span-2 text-headingText text-[28px] md:text-[30px] mt-3 text-center md:text-left md:pl-20"
           initial={{ opacity: 0, y: 50 }} // Start from bottom
           whileInView={{ opacity: 1, y: 0 }} // Move to normal position
           transition={{ duration: 0.8, delay: 0.5 }} // Delay for sequential animation
@@ -123,9 +123,9 @@ const WhyChooseSlide = () => {
           {/* Background Color Here */}
         </div>
       </div>
-      <div className="flex  relative z-0">
+      <div className="md:flex  relative z-0">
         {/* Image Section */}
-        <div className="relative h-72 w-[55%] md:h-[30rem] lg:h-[34rem]  z-10">
+        <div className="relative h-60 md:w-[55%] w-[100%] md:h-[30rem] lg:h-[34rem]  z-10">
           <AnimatePresence mode="wait">
             <motion.div
               key={`image-${currentSlide}`}
@@ -148,7 +148,7 @@ const WhyChooseSlide = () => {
         </div>
 
         {/* Text Section */}
-        <div className="flex w-[45%] flex-col justify-center p-4 md:p-8 bg-[#F9F7F7] relative z-20   ">
+        <div className="flex md:w-[45%] flex-col justify-center p-4 md:p-8 bg-[#F9F7F7] relative z-20   ">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
               key={`text-${currentSlide}`}
@@ -159,10 +159,10 @@ const WhyChooseSlide = () => {
               transition={{ duration: 0.8 }}
               custom={direction}
             >
-              <h2 className="headingFont text-headingText text-[20px] md:text-[30px] mt-6 mb-10 translate-x-5 ">
+              <h2 className="headingFont text-headingText text-[20px] md:text-[30px] mt-6 md:mb-10 translate-x-5 lg:text-left text-center">
                 {slides[currentSlide].title}
               </h2>
-              <p className="paragraphFont text-gray-600 mt-4 text-sm text-justify translate-x-5  w-96">
+              <p className="paragraphFont text-gray-600 mt-4 text-sm text-justify translate-x-5  md:w-96 lg:mx-0 mx-10 ">
                 {slides[currentSlide].description}
               </p>
             </motion.div>

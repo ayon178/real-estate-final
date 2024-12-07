@@ -7,9 +7,9 @@ const AboutUs = () => {
   return (
     <div className="relative flex flex-col-reverse md:flex-row px-4 md:px-0 justify-start lg:mb-28 bg-white">
     
-      {/* Image Animation */}
+      {/* Image Animation - Visible on medium and large devices */}
       <motion.div
-        className="hidden lg:block w-full md:w-[55%] h-[400px] md:h-[600px] z-0 bg-white"
+        className="hidden md:block w-full md:w-[55%] h-[400px] md:h-[600px] z-0 bg-white"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -22,19 +22,19 @@ const AboutUs = () => {
         />
       </motion.div>
 
-      {/* Text Animation */}
+      {/* Text Content */}
       <motion.div
-        className="w-full md:w-[45%] md:p-14 p-4 flex flex-col justify-center items-center lg:items-start z-0 bg-white"
+        className="w-full md:w-[45%] lg::p-14 p-4 flex flex-col justify-center items-center text-center z-0 bg-white"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.2 }}
         style={{
           backgroundImage: `url(${aboutBg.src})`,
-          backgroundPosition: 'right top',  // For small devices, default position to the right top
+          backgroundPosition: 'right top',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: '100%',  // For small devices, background size 100%
-          height: '700px',  // Adjusted height for small devices
+          backgroundSize: 'cover',
+          minHeight: '700px',
         }}
       >
         <motion.p
@@ -57,7 +57,7 @@ const AboutUs = () => {
         </motion.h1>
 
         <motion.p
-          className="paragraphFont text-paraText text-[13px] leading-6 mt-5 mb-4 lg:w-96 text-justify"
+          className="paragraphFont text-paraText text-[13px] leading-6 mt-5 mb-4 lg:w-96 text-center lg:text-justify"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -67,7 +67,7 @@ const AboutUs = () => {
         </motion.p>
 
         <motion.p
-          className="paragraphFont text-paraText text-[13px] leading-6 text-justify lg:mb-4 lg:w-96"
+          className="paragraphFont text-paraText text-[13px] leading-6 text-center lg:text-justify lg:mb-4 lg:w-96"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
@@ -77,7 +77,7 @@ const AboutUs = () => {
         </motion.p>
 
         <motion.p
-          className="paragraphFont text-paraText text-[13px] leading-6 text-justify lg:mb-8 lg:w-96 p-4"
+          className="paragraphFont text-paraText text-[13px] leading-6 text-center lg:text-justify lg:mb-8 lg:w-96 p-4"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}

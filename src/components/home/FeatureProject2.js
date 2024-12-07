@@ -67,7 +67,7 @@ const FeatureProject2 = () => {
   }
 
   return (
-    <div className="pt-8 flex flex-col justify-center max-w-6xl mx-auto mt-28">
+    <div className="pt-8 flex flex-col justify-center max-w-6xl mx-auto md:mt-28 mt-16">
       {/* Top Section */}
       <motion.p
         className="paragraphFont text-secondary text-[12px] md:text-[14px] text-center"
@@ -105,7 +105,7 @@ const FeatureProject2 = () => {
           >
             {/* Grid Item */}
             <div
-              className="lg:h-full md:[500px] h-[400px] bg-cover bg-center flex flex-col justify-end p-6 relative hover:scale-105 transition-transform duration-700 "
+              className="lg:h-full md:h-[550px] h-[400px] bg-cover bg-center flex flex-col justify-end p-6 relative hover:scale-105 transition-transform duration-700 "
               style={{ backgroundImage: `url(${item.imageUrl.src})` }}
             >
               {/* Overlay */}
