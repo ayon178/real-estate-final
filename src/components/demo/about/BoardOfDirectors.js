@@ -69,11 +69,11 @@ const BoardOfDirectors = () => {
         Our Leaders
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7  mx-20  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-7 gap-6  lg:mx-20   ">
         {directors.map((director, index) => (
           <div
             className={`bg-white rounded-lg shadow-lg overflow-hidden pt-3 ${
-              index === 0 ? 'col-span-2' : ''
+              index === 0 ? 'md:col-span-2' : ''
             }`}
             key={index}
           >
@@ -87,7 +87,8 @@ const BoardOfDirectors = () => {
               <img
                 src={director.imageUrl}
                 alt={director.name}
-                className={`w-full  ${index === 0 ? 'md:w-1/5': 'md:w-2/5'} h-[300px] object-cover object-center`}
+                className={`w-full  ${index === 0 ? 'sm:w-1/2 md:w-2/5 lg:w-1/4 w-40 ' : 'sm:w-3/4 md:w-3/5 lg:w-1/3 w-72 h-96'} 
+                lg:h-[300px] object-cover object-center`}
               />
 
               <div className="p-8 pb-0">
@@ -113,7 +114,7 @@ const BoardOfDirectors = () => {
                 </motion.h4>
                 {/* Description */}
                 <motion.p
-                  className="paragraphFont text-[#66717A] text-[13px] leading-6"
+                  className="paragraphFont text-[#66717A] text-[13px] leading-6 lg:py-0 py-6"
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}

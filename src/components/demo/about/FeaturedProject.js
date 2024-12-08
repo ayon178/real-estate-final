@@ -54,7 +54,7 @@ export default function FeaturedProject() {
             VIEW ALL PROJECTS →
           </a> */}
         </div>
-        <p className="text-gray-600 text-center paragraphFont max-w-xl mx-auto mb-12 text-[14px]">
+        <p className="text-gray-600 text-center paragraphFont max-w-xl mx-auto mb-12 text-[14px] px-4 lg:px-0">
           Service to the cause of humanity had always been the cherished desire
           and dream of our honorable Managing Director since his childhood. With
           this mindset, he started helping the “Have nots” from his savings in a

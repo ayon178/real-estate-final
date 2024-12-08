@@ -62,7 +62,7 @@ const awards = [
 
 export default function AwardsComponent() {
   return (
-    <section id="awards" className="py-16 container mx-auto bg-white text-center">
+    <section id="awards" className="lg:py-16 container mx-auto bg-white text-center">
       <motion.h2
         className="headingFont text-3xl md:text-4xl text-gray-800 mb-4"
         initial={{ opacity: 0, y: 50 }} // Start from below with 0 opacity
@@ -70,10 +70,10 @@ export default function AwardsComponent() {
         viewport={{ once: true }} // Trigger animation only once when in view
         transition={{ duration: 0.6 }}
       >
-        Awards & Recognition
+        Awards & Recognition 
       </motion.h2>
       <motion.p
-        className="text-gray-600 paragraphFont max-w-xl mx-auto mb-12 text-[14px]"
+        className="text-gray-600 paragraphFont max-w-xl mx-auto mb-12 text-[14px] px-4 lg:px-0"
         initial={{ opacity: 0, y: 50 }} // Start from below with 0 opacity
         whileInView={{ opacity: 1, y: 0 }} // Animate to full opacity and original position
         viewport={{ once: true }} // Trigger animation only once when in view
