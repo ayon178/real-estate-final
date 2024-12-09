@@ -3,13 +3,13 @@ import React from 'react'
 import { motion } from 'framer-motion'
 const Form = () => {
   return (
-    <div className="max-w-2xl mx-auto p-10 shadow-xl  mb-10">
+    <div className="md:p-10 p-4 shadow-xl  lg:mb-10">
       <div className="flex flex-col items-start space-y-4 p-6">
         <span className="text-sm headingFont uppercase tracking-widest text-amber-700">
           Leave a message
         </span>
         <h2 className=" headingFont text-4xl font-serif text-navy-900 text-[#14274A]">
-          We love to hear from you
+          We love to hear from you 
         </h2>
       </div>
       <form className="space-y-6">

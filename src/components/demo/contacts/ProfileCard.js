@@ -10,31 +10,35 @@ const ProfileCard = () => {
       position: 'Senior Marketing Manager',
       phone: '+ 844 123 444 77 88',
       email: 'contact@example.com',
-      image:
-        'https://demo2.wpopal.com/rehomes/wp-content/uploads/elementor/thumbs/about-leader-3-og0eqt9bp7t2pmsu3goqvvh7xzgvn69q137ew9onqk.jpg',
+      image: 'https://demo2.wpopal.com/rehomes/wp-content/uploads/elementor/thumbs/about-leader-3-og0eqt9bp7t2pmsu3goqvvh7xzgvn69q137ew9onqk.jpg',
     },
     {
       name: 'William Smith',
       position: 'Recruiting Manager',
       phone: '+ 844 123 444 77 88',
       email: 'contact@example.com',
-      image:
-        'https://demo2.wpopal.com/rehomes/wp-content/uploads/elementor/thumbs/about-leader-3-og0eqt9bp7t2pmsu3goqvvh7xzgvn69q137ew9onqk.jpg',
+      image: 'https://demo2.wpopal.com/rehomes/wp-content/uploads/elementor/thumbs/about-leader-3-og0eqt9bp7t2pmsu3goqvvh7xzgvn69q137ew9onqk.jpg',
     },
     {
       name: 'Emma Stone',
       position: 'Human Resource',
       phone: '+ 844 123 444 77 88',
       email: 'contact@example.com',
-      image:
-        'https://demo2.wpopal.com/rehomes/wp-content/uploads/elementor/thumbs/about-leader-3-og0eqt9bp7t2pmsu3goqvvh7xzgvn69q137ew9onqk.jpg',
+      image: 'https://demo2.wpopal.com/rehomes/wp-content/uploads/elementor/thumbs/about-leader-3-og0eqt9bp7t2pmsu3goqvvh7xzgvn69q137ew9onqk.jpg',
     },
   ]
 
   return (
-    <div className="p-12 sm:flex sm:flex-row-reverse sm:gap-12">
+    <div className="md:p-12 flex flex-col md:flex-col lg:flex-row-reverse lg:gap-12">
+      {/* Form Section */}
+      <div className="md:w-full lg:w-1/2 order-1 md:order-1 lg:order-2 mb-8 md:mb-8 lg:mb-0">
+        <div className="bg-white p-6 rounded-lg">
+          <Form />
+        </div>
+      </div>
+
       {/* Profiles Section */}
-      <div className="flex-1 space-y-6">
+      <div className="md:w-full lg:w-1/2 order-2 md:order-2 lg:order-1 space-y-6">
         {profiles.map((profile, index) => (
           <motion.div
             key={index}
@@ -85,11 +89,6 @@ const ProfileCard = () => {
             </div>
           </motion.div>
         ))}
-      </div>
-
-      {/* Form Section */}
-      <div className="flex-1 bg-white p-6 rounded-lg ">
-        <Form />
       </div>
     </div>
   )

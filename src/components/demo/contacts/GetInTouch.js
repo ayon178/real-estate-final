@@ -8,13 +8,13 @@ import { motion } from 'framer-motion'
 
 const GetInTouch = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center px-4 items-center justify-center mx-auto md:px-16 mt-20 bg-white">
+    <div className="flex flex-col md:flex-col lg:flex-row justify-center px-4 items-center mx-auto md:px-16 mt-20 bg-white">
       <motion.div
-        className="w-full md:w-3/6 pr-0 md:pr-32"
-        initial={{ opacity: 0, y: 50 }} // Initial state (hidden and moved down)
-        whileInView={{ opacity: 1, y: 0 }} // Final state (visible and in place)
-        viewport={{ once: true }} // Trigger animation when in view
-        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }} // Animation with delay
+        className="w-full md:w-full lg:w-3/6 order-1 md:order-1 lg:order-none pr-0 lg:pr-32"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
       >
         <p className="text-secondary headingFont text-[10px] md:text-[16px]">
           Get In Touch
@@ -30,8 +30,8 @@ const GetInTouch = () => {
           <div className="space-y-3">
             <motion.div
               className="flex paragraphFont items-center gap-6"
-              initial={{ opacity: 0, y: 50 }} // Initial state (hidden and moved down)
-              whileInView={{ opacity: 1, y: 0 }} // Final state (visible and in place)
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
             >
@@ -77,11 +77,10 @@ const GetInTouch = () => {
         </div>
       </motion.div>
 
-      {/* Column 2 */}
       <motion.div
-        className="w-full h-[400px] md:h-[600px]"
-        initial={{ opacity: 0, y: 50 }} // Initial state (hidden and moved down)
-        whileInView={{ opacity: 1, y: 0 }} // Final state (visible and in place)
+        className="w-full md:w-full lg:w-3/6 order-2 md:order-2 lg:order-none h-[400px] md:h-[600px] mt-8 md:mt-8 lg:mt-0 mb-8 md:mb-8 lg:mb-0"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
       >
