@@ -6,16 +6,6 @@ import {
 } from 'react-icons/ai'
 import { FaSwimmingPool, FaTree, FaChild, FaDumbbell } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import {
-  childrenIcon,
-  communityIcon,
-  firefightingsystemIcon,
-  fitnesscentreIcon,
-  landscapegardenIcon,
-  survelliancesystemIcon,
-  swimmingpoolIcon,
-  securityIcon,
-} from '@/app/constant/images'
 
 const Amenities = () => {
   const amenities = [
@@ -30,7 +20,7 @@ const Amenities = () => {
   ]
 
   return (
-    <div className="bg-[#f9f4ef] py-20 mt-16">
+    <div className="bg-[#f9f4ef] py-20 mt-16 lg:px-0 px-10">
       <motion.h2
         className="text-3xl headingFont mb-4 text-primary text-center"
         initial={{ opacity: 0, y: 50 }}
@@ -50,14 +40,14 @@ const Amenities = () => {
         SEL brings to you the Building Revolution. It all started
         with realistic appraisal of your living needs.
       </motion.p>
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-24 text-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-24 text-center">
         {amenities.map((amenity, index) => (
           <motion.div
             key={index}
             className="flex flex-col items-center"
-            initial={{ opacity: 0, y: 50 }} // Starts from below and invisible
-            whileInView={{ opacity: 1, y: 0 }} // Triggers when the element comes into view
-            viewport={{ once: true }} // Ensures it triggers only once
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: index * 0.2, duration: 0.4, ease: 'easeOut' }}
           >
             <div className="text-[#d4a373] mb-4">{amenity.icon}</div>

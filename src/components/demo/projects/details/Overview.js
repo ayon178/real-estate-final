@@ -9,9 +9,9 @@ const Overview = ({ id }) => {
         Overview
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12  gap-4 items-center">
         {/* Left side: Image */}
-        <div className="lg:col-span-6 ">
+        <div className="lg:col-span-6 lg:mx-0 mx-auto ">
           <Image
             width={600}
             height={300}
@@ -41,7 +41,7 @@ const Overview = ({ id }) => {
         {/* Right side: Details */}
         {/* Right side: Details with animation */}
         <motion.div
-          className="lg:col-span-6 grid grid-cols-1 gap-4 border-l ps-4 border-gray-300 pt-4 text-gray-800"
+          className="lg:col-span-6 grid grid-cols-1 gap-4 border-l ps-4 border-gray-300 pt-4 text-gray-800 lg:mx-0 mx-auto"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -56,7 +56,7 @@ const Overview = ({ id }) => {
             viewport={{ once: true }}
           >
             <p className="font-semibold">Location:</p>
-            <p className="whitespace-nowrap">Dhanmondi, Dhanmondi, Dhaka</p>
+            <p className="lg:whitespace-nowrap">Dhanmondi, Dhanmondi, Dhaka</p>
           </motion.div>
 
           <motion.div
@@ -67,7 +67,7 @@ const Overview = ({ id }) => {
             viewport={{ once: true }}
           >
             <p className="font-semibold">Address:</p>
-            <p className="whitespace-nowrap">
+            <p className="lg:whitespace-nowrap">
               Holding Number-08 (New), 19/A (Old), Road-06, Dhanmondi, Dhaka
             </p>
           </motion.div>
@@ -115,7 +115,7 @@ const Overview = ({ id }) => {
             viewport={{ once: true }}
           >
             <p className="font-semibold whitespace-nowrap">Number of Floor:</p>
-            <p className="whitespace-nowrap">
+            <p className="lg:whitespace-nowrap">
               14 storied building with Two Basement(s)
             </p>
           </motion.div>
@@ -152,7 +152,7 @@ const Overview = ({ id }) => {
             <p className="font-semibold whitespace-nowrap">
               Estimated Completion Date:
             </p>
-            <p className="whitespace-nowrap">Friday, June 30, 2023</p>
+            <p className="lg:whitespace-nowrap">Friday, June 30, 2023</p>
           </motion.div>
 
           {/* <motion.div
