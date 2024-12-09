@@ -6,7 +6,7 @@ import { logo2 } from '@/app/constant/images'
 const Text = () => {
   return (
     <div className="flex flex-col items-center justify-center lg:mt-32 md:mt-20 mt-16 bg-white">
-      <img src={logo2.src} className='w-60' alt="" />
+      <img src={logo2.src} className='lg:w-60 w-20 md:w-28' alt="" />
       {/* Animation for h1 */}
       <motion.h1
         className="text-4xl headingFont text-gray-800 mb-5 mt-6"
